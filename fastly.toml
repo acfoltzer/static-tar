@@ -1,0 +1,12 @@
+# This file describes a Fastly Compute@Edge package. To learn more visit:
+# https://developer.fastly.com/reference/fastly-toml/
+
+authors = ["acfoltzer@acfoltzer.net"]
+description = " to Serve up static files from a tar archive compiled into the Wasm"
+language = "rust"
+manifest_version = 2
+name = "static-tar"
+service_id = "YJsT1QrK80iztURWHhwgE7"
+
+[scripts]
+  build = "cargo build --bin static-tar --release --target wasm32-wasi --color always"
